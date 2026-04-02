@@ -18,7 +18,7 @@ public abstract class DefenseHandler {
     }
 
     protected void passToNext(int damage, ArenaFighter target) {
-        if (damage > 0 && next != null) {
+        if (next != null) {
             next.handle(damage, target);
         }
     }
